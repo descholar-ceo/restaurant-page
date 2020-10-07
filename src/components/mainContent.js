@@ -1,3 +1,8 @@
+import imageOne from '../assets/images/img-1.jpg';
+import imageTwo from '../assets/images/img-2.jpg';
+import imageThree from '../assets/images/img-3.jpg';
+import imageFour from '../assets/images/img-4.jpg';
+
 const mainContent = (location, element) => {
     element.insertAdjacentHTML(location,`
     <main class="main-page width-100 height-100">
@@ -8,7 +13,7 @@ const mainContent = (location, element) => {
                 <div class="width-100 box-with-shadows padding-1 width-md-90 margin-y-1">
                     <div class=" centered-h-v">
                         <h3 class="centered-text margin-y-1">Accommodation directory</h3>
-                        <img class="project-screenshot" src="./assets/images/accomodation-directory.png"
+                        <img class="project-screenshot" src="${imageOne}"
                             alt="Accommodation directory" />
                     </div>
                     <div class="flex-horizontal-center">
@@ -22,7 +27,7 @@ const mainContent = (location, element) => {
                     <div class=" centered-h-v">
                         <h3 class="centered-text margin-y-1">Telegram chatbot</h3>
                         <img class="project-screenshot"
-                            src="./assets/images/telegram-bot.jpg"
+                            src="${imageTwo}"
                             alt="Accommodation directory" />
                     </div>
                     <div class="flex-horizontal-center">
@@ -35,7 +40,7 @@ const mainContent = (location, element) => {
                 <div class="width-100 box-with-shadows padding-1 width-md-90 margin-y-1">
                     <div class=" centered-h-v">
                         <h3 class="centered-text margin-y-1">Boiler</h3>
-                        <img class="project-screenshot" src="./assets/images/boiler.jpg"
+                        <img class="project-screenshot" src="${imageThree}"
                             alt="Accommodation directory" />
                     </div>
                     <div class="flex-horizontal-center">
@@ -48,7 +53,7 @@ const mainContent = (location, element) => {
                 <div class="box-with-shadows padding-1 width-md-90 margin-y-1 width-100">
                     <div class=" centered-h-v">
                         <h3 class="centered-text margin-y-1">Phone History Store</h3>
-                        <img class="project-screenshot-phone" src="./assets/images/phone-history-store.png"
+                        <img class="project-screenshot" src="${imageFour}"
                             alt="Phone History Store" />
                     </div>
                     <div class="flex-horizontal-center">
