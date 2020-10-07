@@ -1,1 +1,4 @@
-alert('welcome to the new world')
+import App from './App';
+import './assets/styles/styles.scss';
+
+App('beforeend', document.querySelector('#content'))
