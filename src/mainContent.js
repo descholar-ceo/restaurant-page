@@ -1,4 +1,4 @@
-const MainContent = (location, element) => {
+const mainContent = (location, element) => {
     element.insertAdjacentHTML(location,`
     <main class="main-page width-100 height-100">
         
@@ -63,4 +63,4 @@ const MainContent = (location, element) => {
     `);
 };
 
-export default MainContent;
+export default mainContent;

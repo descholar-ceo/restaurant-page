@@ -1,9 +1,9 @@
 import './assets/styles/styles.scss';
-import NavBar from './NavBar';
-import MainContent from './MainContent';
+import navBar from './navBar';
+import mainContent from './mainContent';
 import footer from './footer';
 const rootElement = document.querySelector('#content')
 
-NavBar('beforeend', rootElement)
-MainContent('beforeend', rootElement)
+navBar('beforeend', rootElement)
+mainContent('beforeend', rootElement)
 footer('beforeend', rootElement)
