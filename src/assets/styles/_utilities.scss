@@ -10,6 +10,14 @@ $spaceAmount: (0, 1, 2, 3, 4, 5);
     margin: 0 #{$space}rem;
   }
 
+  .margin-t-#{$space} {
+    margin-top: #{$space}rem;
+  }
+
+  .margin-b-#{$space} {
+    margin-bottom: #{$space}rem;
+  }
+
   .margin-y-#{$space} {
     margin: #{$space}rem 0;
   }
@@ -33,6 +41,10 @@ $spaceAmount: (0, 1, 2, 3, 4, 5);
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $justify;
+}
+
+.line-height {
+  line-height: 1.5;
 }
 
 .flex-horizontal-center {
