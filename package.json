@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack -p --env production",
     "dev": "webpack-dev-server --env development --watch --open",
+    "start": "webpack-dev-server --env production",
     "eslint-f": "npx eslint . --fix",
     "stylelint-f": "npx stylelint **/*.{css,scss} --fix"
   },
