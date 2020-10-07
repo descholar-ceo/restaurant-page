@@ -3,7 +3,7 @@ import imageTwo from '../assets/images/img-2.jpg';
 import imageThree from '../assets/images/img-3.jpg';
 import imageFour from '../assets/images/img-4.jpg';
 
-const mainContent = (location, element) => {
+const menuPage = (location, element) => {
   element.insertAdjacentHTML(location, `
     <main class="main-page width-100 height-100">
         
@@ -68,4 +68,4 @@ const mainContent = (location, element) => {
     `);
 };
 
-export default mainContent;
+export default menuPage;
