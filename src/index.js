@@ -16,7 +16,7 @@ const mainMenu = () => menuPage('beforeend', mainContainer);
 const mainHome = () => homePage('beforeend', mainContainer);
 const mainContact = () => contactPage('beforeend', mainContainer);
 
-mainMenu();
+mainHome();
 
 const allNavItems = document.querySelectorAll('#nav-item');
 
