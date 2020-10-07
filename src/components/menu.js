@@ -5,8 +5,6 @@ import imageFour from '../assets/images/img-4.jpg';
 
 const menuPage = (location, element) => {
   element.insertAdjacentHTML(location, `
-    <main class="main-page width-100 height-100">
-        
         <section id="projects" class="width-100 m-0 padding-y-1 centered-h-v">
             <h1 class="text-2 centered-text margin-y-1 width-90">My projects</h1>
             <div class="col-md-6 col-lg-4 margin-y-1 width-100 centered-h-v white-transparent-bg padding-1 rounded-corners-1">

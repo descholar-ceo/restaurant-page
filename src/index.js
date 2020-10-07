@@ -2,24 +2,26 @@ import './assets/styles/styles.scss';
 import navBar from './components/navBar';
 import menuPage from './components/menu';
 import footer from './components/footer';
-import homePage from './components/home';
+import { homePage, mainComponent } from './components/home';
 import contactPage from './components/contact';
 
 const rootElement = document.querySelector('#content');
-const nav = () => navBar('beforeend', rootElement);
-const mainMenu = () => menuPage('beforeend', rootElement);
-const mainHome = () => homePage('beforeend', rootElement);
-const mainContact = () => contactPage('beforeend', rootElement);
-const mainFooter = () => footer('beforeend', rootElement);
+const mainWrapper = () => mainComponent('beforeend', rootElement);
+navBar('beforeend', rootElement);
+mainWrapper();
+footer('beforeend', rootElement);
+const mainContainer = document.querySelector('#main-container');
 
-nav();
+const mainMenu = () => menuPage('beforeend', mainContainer);
+const mainHome = () => homePage('beforeend', mainContainer);
+const mainContact = () => contactPage('beforeend', mainContainer);
+
 mainMenu();
-mainFooter();
 
 const allNavItems = document.querySelectorAll('#nav-item');
 
 const tabSwitcher = (moduleToDisplay) => {
-  rootElement.innerHTML = '';
+  mainContainer.innerHTML = '';
   moduleToDisplay();
 };
 
