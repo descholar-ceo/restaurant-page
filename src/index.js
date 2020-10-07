@@ -35,7 +35,7 @@ const deleteClassActive = () => {
 
 const addClassActive = (item) => {
   item.classList.add('active');
-}
+};
 
 // eventListeners
 allNavItems.forEach(item => {
