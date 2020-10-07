@@ -1,4 +1,4 @@
-import App from './App';
+import NavBar from './NavBar';
 import './assets/styles/styles.scss';
 
-App('beforeend', document.querySelector('#content'))
+NavBar('beforeend', document.querySelector('#content'))
