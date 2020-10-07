@@ -25,16 +25,34 @@ const tabSwitcher = (moduleToDisplay) => {
   moduleToDisplay();
 };
 
+const deleteClassActive = () => {
+  allNavItems.forEach(item => {
+    if (item.classList.contains('active')) {
+      item.classList.remove('active');
+    }
+  });
+};
+
+const addClassActive = (item) => {
+  item.classList.add('active');
+}
+
 // eventListeners
 allNavItems.forEach(item => {
   item.addEventListener('click', event => {
     if (event.target.classList.contains('home')) {
+      deleteClassActive();
+      addClassActive(event.target);
       tabSwitcher(mainHome);
     }
     if (event.target.classList.contains('menu')) {
+      deleteClassActive();
+      addClassActive(event.target);
       tabSwitcher(mainMenu);
     }
     if (event.target.classList.contains('contact')) {
+      deleteClassActive();
+      addClassActive(event.target);
       tabSwitcher(mainContact);
     }
   });
