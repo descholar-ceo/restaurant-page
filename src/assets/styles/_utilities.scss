@@ -47,6 +47,11 @@ $spaceAmount: (0, 1, 2, 3, 4, 5);
   line-height: 1.5;
 }
 
+.active {
+  background-color: $secondary-color;
+  color: $white-color;
+}
+
 .flex-horizontal-center {
   @include flex-specs(row, center);
 }
