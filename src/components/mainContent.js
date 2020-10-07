@@ -4,7 +4,7 @@ import imageThree from '../assets/images/img-3.jpg';
 import imageFour from '../assets/images/img-4.jpg';
 
 const mainContent = (location, element) => {
-    element.insertAdjacentHTML(location,`
+  element.insertAdjacentHTML(location, `
     <main class="main-page width-100 height-100">
         
         <section id="projects" class="width-100 m-0 padding-y-1 centered-h-v">
