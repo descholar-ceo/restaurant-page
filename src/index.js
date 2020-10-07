@@ -6,13 +6,15 @@ import homePage from './components/home';
 import contactPage from './components/contact';
 
 const rootElement = document.querySelector('#content');
+const nav = () => navBar('beforeend', rootElement);
 const mainMenu = () => menuPage('beforeend', rootElement);
 const mainHome = () => homePage('beforeend', rootElement);
 const mainContact = () => contactPage('beforeend', rootElement);
 const mainFooter = () => footer('beforeend', rootElement);
 
-navBar('beforeend', rootElement);
+nav();
 mainMenu();
+mainFooter();
 
 const allNavItems = document.querySelectorAll('#nav-item');
 
@@ -28,10 +30,10 @@ allNavItems.forEach(item => {
       tabSwitcher(mainHome);
     }
     if (event.target.classList.contains('menu')) {
-      tabSwitcher(mainContact);
+      tabSwitcher(mainMenu);
     }
     if (event.target.classList.contains('contact')) {
-      tabSwitcher(mainFooter);
+      tabSwitcher(mainContact);
     }
   });
 });

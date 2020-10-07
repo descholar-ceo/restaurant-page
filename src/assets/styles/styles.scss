@@ -19,6 +19,14 @@ body {
   overflow-x: hidden;
 }
 
+nav {
+  li,
+  .fa {
+    color: $white-color;
+    cursor: pointer;
+  }
+}
+
 input {
   padding: 0.5rem;
   outline: none;

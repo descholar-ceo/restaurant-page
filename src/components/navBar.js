@@ -5,15 +5,15 @@ const navBar = (location, element) => {
             <ul class="flex-horizontal-center width-100 width-md-60">
                 <li class="margin-x-1 home" id="nav-item">
                     <i class="fa fa-home hidden-sm" aria-hidden="true"></i>
-                    <span>Home</span>
+                    Home
                 </li>
                 <li class="margin-x-1 contact" id="nav-item">
                     <i class="fa fa-address-card hidden-sm" aria-hidden="true"></i>
-                    <span>Contact</span>
+                    Contact
                 </li>
                 <li class="margin-x-1 menu" id="nav-item">
                     <i class="fa fa-bars hidden-sm" aria-hidden="true"></i>
-                    <span>Menu</span>
+                    Menu
                 </li>
             </ul>
         </nav>
