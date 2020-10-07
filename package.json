@@ -7,7 +7,7 @@
     "build": "webpack -p --env production",
     "dev": "webpack-dev-server --env development --watch --open",
     "eslint-f": "npx eslint . --fix",
-    "stylelint-f": "npx stylelint . --fix"
+    "stylelint-f": "npx stylelint **/*.{css,scss} --fix"
   },
   "repository": {
     "type": "git",
