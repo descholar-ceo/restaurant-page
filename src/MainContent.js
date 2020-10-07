@@ -62,3 +62,5 @@ const MainContent = (location, element) => {
         </section>
     `);
 };
+
+export default MainContent;
