@@ -1,5 +1,5 @@
 const footer = (location, element) => {
-    element.insertAdjacentHTML(location,`<footer>    
+  element.insertAdjacentHTML(location, `<footer>    
         <section class="width-100 m-0 padding-y-1 centered-h-v black-bg">
             <div class="centered-h-v margin-y-1">
                 <h6>

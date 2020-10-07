@@ -1,5 +1,5 @@
-const navBar = (location,element) => {
-    element.insertAdjacentHTML(location,`
+const navBar = (location, element) => {
+  element.insertAdjacentHTML(location, `
     <header class="primary-bg centered-h-v padding-y-1 padding-lg-half width-100">
         <nav class="margin-y-1 centered-h-v width-100 flex-md-horizontal-right">
             <ul class="flex-horizontal-center width-100 width-md-60">
@@ -30,7 +30,7 @@ const navBar = (location,element) => {
             </ul>
         </nav>
     </header>
-    `)
+    `);
 };
 
 export default navBar;
