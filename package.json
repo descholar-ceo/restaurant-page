@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack -p --env production",
     "dev": "webpack-dev-server --env development --watch --open",
-    "eslint-f": "eslint . --fix"
+    "eslint-f": "npx eslint . --fix",
+    "stylelint-f": "npx stylelint . --fix"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,9 @@
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.3.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.18.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
