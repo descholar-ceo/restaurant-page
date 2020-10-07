@@ -1,7 +1,7 @@
 const contactPage = (location, element) => {
   element.insertAdjacentHTML(location, `
-    <section id="contact" class="width-100 padding-5">
-      <div class="primary-bg padding-y-1 padding-lg-half width-80 centered-horizontal white-text rounded-corners-1 box-with-shadows">
+    <section id="contact" class="width-100 padding-2 primary-bg">
+      <div class="third-transparent-bg padding-y-1 padding-lg-half width-80 centered-horizontal white-text rounded-corners-1 box-with-shadows">
       <h1 class="centered-text width-90">We would like to hear from you:</h1>
       <div class="contact-info margin-y-2 line-height width-90">
           <h4 class="centered-text centered-text">You can call us on : +250 720 000 000</h4>
