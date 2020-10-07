@@ -1,0 +1,25 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Project description=> https://www.theodinproject.com/courses/javascript/lessons/restaurant-page",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/descholar-ceo/restaurant-page.git"
+  },
+  "keywords": [
+    "ES6",
+    "Vanilla-Javascript",
+    "rendering-html",
+    "webpack"
+  ],
+  "author": "descholar-ceo <emmanuellamugi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/descholar-ceo/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/descholar-ceo/restaurant-page#readme"
+}
