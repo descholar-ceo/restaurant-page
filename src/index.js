@@ -7,9 +7,9 @@ import contactPage from './components/contact';
 
 const rootElement = document.querySelector('#content');
 const mainWrapper = () => mainComponent('beforeend', rootElement);
-navBar('beforeend', rootElement);
+navBar(rootElement);
 mainWrapper();
-footer('beforeend', rootElement);
+footer(rootElement);
 const mainContainer = document.querySelector('#main-container');
 
 const mainMenu = () => menuPage('beforeend', mainContainer);
