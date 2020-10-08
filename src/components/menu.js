@@ -4,7 +4,7 @@ import imageThree from '../assets/images/img-3.jpg';
 import imageFour from '../assets/images/img-4.jpg';
 import imageFive from '../assets/images/img-5.jpeg';
 
-const menuPage = (location, element) => {
+const menuPage = (element) => {
   // menu section
   const menuSection = document.createElement('section');
   menuSection.setAttribute('class', 'width-100 m-0 padding-y-1 centered-h-v');
@@ -26,6 +26,7 @@ const menuPage = (location, element) => {
   const menuItemImg1 = document.createElement('img');
   menuItemImg1.setAttribute('class', 'meal-img');
   menuItemImg1.setAttribute('src', imageOne);
+  menuItemImg1.setAttribute('alt', 'imageOne');
   menuItemImgDiv1.appendChild(menuItemImg1);
 
   // menuItemH31
@@ -73,6 +74,7 @@ const menuPage = (location, element) => {
   const menuItemImg2 = document.createElement('img');
   menuItemImg2.setAttribute('class', 'meal-img');
   menuItemImg2.setAttribute('src', imageTwo);
+  menuItemImg2.setAttribute('alt', 'imageTwo');
   menuItemImgDiv2.appendChild(menuItemImg2);
 
   // menuItemH32
@@ -120,6 +122,7 @@ const menuPage = (location, element) => {
   const menuItemImg3 = document.createElement('img');
   menuItemImg3.setAttribute('class', 'meal-img');
   menuItemImg3.setAttribute('src', imageThree);
+  menuItemImg3.setAttribute('alt', 'imageThree');
   menuItemImgDiv3.appendChild(menuItemImg3);
 
   // menuItemH33
@@ -167,6 +170,7 @@ const menuPage = (location, element) => {
   const menuItemImg4 = document.createElement('img');
   menuItemImg4.setAttribute('class', 'meal-img');
   menuItemImg4.setAttribute('src', imageFour);
+  menuItemImg4.setAttribute('alt', 'imageFour');
   menuItemImgDiv4.appendChild(menuItemImg4);
 
   // menuItemH34
@@ -214,6 +218,7 @@ const menuPage = (location, element) => {
   const menuItemImg5 = document.createElement('img');
   menuItemImg5.setAttribute('class', 'meal-img');
   menuItemImg5.setAttribute('src', imageFive);
+  menuItemImg5.setAttribute('alt', 'imageFive');
   menuItemImgDiv5.appendChild(menuItemImg5);
 
   // menuItemH35
