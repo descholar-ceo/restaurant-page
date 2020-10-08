@@ -14,7 +14,7 @@ const mainContainer = document.querySelector('#main-container');
 
 const mainMenu = () => menuPage('beforeend', mainContainer);
 const mainHome = () => homePage(mainContainer);
-const mainContact = () => contactPage('beforeend', mainContainer);
+const mainContact = () => contactPage(mainContainer);
 
 mainHome();
 
