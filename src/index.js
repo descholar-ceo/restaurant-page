@@ -13,7 +13,7 @@ footer(rootElement);
 const mainContainer = document.querySelector('#main-container');
 
 const mainMenu = () => menuPage('beforeend', mainContainer);
-const mainHome = () => homePage('beforeend', mainContainer);
+const mainHome = () => homePage(mainContainer);
 const mainContact = () => contactPage('beforeend', mainContainer);
 
 mainHome();
