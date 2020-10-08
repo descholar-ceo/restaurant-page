@@ -1,16 +1,22 @@
 const footer = (location, element) => {
-  element.insertAdjacentHTML(location, `
-  <footer>    
-        <section class="width-100 m-0 padding-y-1 centered-h-v black-bg">
-            <div class="centered-h-v margin-y-1">
-                <h6>
-                    <span class="text-1 white-text">
-                    <i class="fa fa-copyright" aria-hidden="true"></i> restaurant page 2020</span>
-                </h6>
-               </div>
-        </section>
-    </footer>
-`);
+  const footerElt = document.createElement('footer');
+  const footerSection = document.createElement('section');
+  footerSection.setAttribute('class', 'width-100 m-0 padding-y-1 centered-h-v black-bg');
+  const footerDiv = document.createElement('div');
+  footerDiv.setAttribute('class', 'centered-h-v margin-y-1');
+  const footerH6 = document.createElement('h6');
+  const footerSpan = document.createElement('span');
+  footerSpan.setAttribute('class', 'text-1 white-text');
+  const footerIcon = document.createElement('i');
+  footerIcon.setAttribute('class', 'fa fa-copyright');
+
+  footerSpan.textContent = 'restaurant page 2020';
+  footerSpan.appendChild(footerIcon);
+  footerH6.appendChild(footerSpan);
+  footerDiv.appendChild(footerH6);
+  footerSection.appendChild(footerDiv);
+  footerElt.appendChild(footerSection);
+  element.append(footerElt);
 };
 
 export default footer;
