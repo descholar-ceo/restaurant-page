@@ -1,26 +1,50 @@
-const navBar = (location, element) => {
-//   const headerElt = document.creat
+const navBar = (element) => {
+  const headerElt = document.createElement('header');
+  headerElt.setAttribute('class', 'primary-bg centered-h-v width-100');
+  const navElt = document.createElement('nav');
+  navElt.setAttribute('class', 'centered-h-v width-100 flex-md-horizontal-right');
+  const navUl = document.createElement('ul');
+  navUl.setAttribute('class', 'flex-horizontal-center width-100 width-md-60');
+  const navLiHome = document.createElement('li');
+  navLiHome.setAttribute('class', 'padding-1 margin-x-1 active home');
+  navLiHome.setAttribute('id', 'nav-item');
+  const navLiContact = document.createElement('li');
+  navLiContact.setAttribute('class', 'padding-1 margin-x-1 contact');
+  navLiContact.setAttribute('id', 'nav-item');
+  const navLiMenu = document.createElement('li');
+  navLiMenu.setAttribute('class', 'padding-1 margin-x-1 menu');
+  navLiMenu.setAttribute('id', 'nav-item');
+  const homeIcon = document.createElement('i');
+  homeIcon.setAttribute('class', 'fa fa-home hidden-sm');
+  homeIcon.setAttribute('aria-hidden', 'true');
+  const contactIcon = document.createElement('i');
+  contactIcon.setAttribute('class', 'fa fa-address-card hidden-sm');
+  contactIcon.setAttribute('aria-hidden', 'true');
+  const menuIcon = document.createElement('i');
+  menuIcon.setAttribute('class', 'fa fa-bars hidden-sm');
+  menuIcon.setAttribute('aria-hidden', 'true');
+  const homeText = document.createTextNode('Home');
+  const contactText = document.createTextNode('Contact');
+  const menuText = document.createTextNode('Menu');
 
-  element.insertAdjacentHTML(location, `
-    <header class="primary-bg centered-h-v width-100">
-        <nav class="centered-h-v width-100 flex-md-horizontal-right">
-            <ul class="flex-horizontal-center width-100 width-md-60">
-                <li class="padding-1 margin-x-1 active home" id="nav-item">
-                    <i class="fa fa-home hidden-sm" aria-hidden="true"></i>
-                    Home
-                </li>
-                <li class="padding-1 margin-x-1 contact" id="nav-item">
-                    <i class="fa fa-address-card hidden-sm" aria-hidden="true"></i>
-                    Contact
-                </li>
-                <li class="padding-1 margin-x-1 menu" id="nav-item">
-                    <i class="fa fa-bars hidden-sm" aria-hidden="true"></i>
-                    Menu
-                </li>
-            </ul>
-        </nav>
-    </header>
-    `);
+  navLiHome.appendChild(homeIcon);
+  navLiHome.appendChild(homeText);
+
+  navLiContact.appendChild(contactIcon);
+  navLiContact.appendChild(contactText);
+
+  navLiMenu.appendChild(menuIcon);
+  navLiMenu.appendChild(menuText);
+
+  navUl.appendChild(navLiHome);
+  navUl.appendChild(navLiContact);
+  navUl.appendChild(navLiMenu);
+
+  navElt.appendChild(navUl);
+
+  headerElt.appendChild(navElt);
+
+  element.append(headerElt);
 };
 
 export default navBar;
