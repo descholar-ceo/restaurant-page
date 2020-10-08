@@ -9,9 +9,10 @@ const footer = (location, element) => {
   footerSpan.setAttribute('class', 'text-1 white-text');
   const footerIcon = document.createElement('i');
   footerIcon.setAttribute('class', 'fa fa-copyright');
+  const footerText = document.createTextNode('restaurant page 2020');
 
-  footerSpan.textContent = 'restaurant page 2020';
   footerSpan.appendChild(footerIcon);
+  footerSpan.appendChild(footerText);
   footerH6.appendChild(footerSpan);
   footerDiv.appendChild(footerH6);
   footerSection.appendChild(footerDiv);

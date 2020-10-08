@@ -1,4 +1,6 @@
 const navBar = (location, element) => {
+//   const headerElt = document.creat
+
   element.insertAdjacentHTML(location, `
     <header class="primary-bg centered-h-v width-100">
         <nav class="centered-h-v width-100 flex-md-horizontal-right">
