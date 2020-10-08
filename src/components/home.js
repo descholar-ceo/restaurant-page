@@ -1,6 +1,8 @@
-const mainComponent = (location, element) => {
-  element.insertAdjacentHTML(location, `
-    <main class="main-page width-100 height-100" id="main-container"></main>`);
+const mainComponent = (element) => {
+  const mainElt = document.createElement('main');
+  mainElt.setAttribute('class', 'main-page width-100 height-100');
+  mainElt.setAttribute('id', 'main-container');
+  element.append(mainElt);
 };
 
 const homePage = (location, element) => {

@@ -6,7 +6,7 @@ import { homePage, mainComponent } from './components/home';
 import contactPage from './components/contact';
 
 const rootElement = document.querySelector('#content');
-const mainWrapper = () => mainComponent('beforeend', rootElement);
+const mainWrapper = () => mainComponent(rootElement);
 navBar(rootElement);
 mainWrapper();
 footer(rootElement);
