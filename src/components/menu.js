@@ -72,7 +72,7 @@ const menuPage = (location, element) => {
   // menuItemImg2
   const menuItemImg2 = document.createElement('img');
   menuItemImg2.setAttribute('class', 'meal-img');
-  menuItemImg2.setAttribute('src', imageOne);
+  menuItemImg2.setAttribute('src', imageTwo);
   menuItemImgDiv2.appendChild(menuItemImg2);
 
   // menuItemH32
@@ -119,7 +119,7 @@ const menuPage = (location, element) => {
   // menuItemImg3
   const menuItemImg3 = document.createElement('img');
   menuItemImg3.setAttribute('class', 'meal-img');
-  menuItemImg3.setAttribute('src', imageOne);
+  menuItemImg3.setAttribute('src', imageThree);
   menuItemImgDiv3.appendChild(menuItemImg3);
 
   // menuItemH33
@@ -166,7 +166,7 @@ const menuPage = (location, element) => {
   // menuItemImg4
   const menuItemImg4 = document.createElement('img');
   menuItemImg4.setAttribute('class', 'meal-img');
-  menuItemImg4.setAttribute('src', imageOne);
+  menuItemImg4.setAttribute('src', imageFour);
   menuItemImgDiv4.appendChild(menuItemImg4);
 
   // menuItemH34
@@ -213,7 +213,7 @@ const menuPage = (location, element) => {
   // menuItemImg5
   const menuItemImg5 = document.createElement('img');
   menuItemImg5.setAttribute('class', 'meal-img');
-  menuItemImg5.setAttribute('src', imageOne);
+  menuItemImg5.setAttribute('src', imageFive);
   menuItemImgDiv5.appendChild(menuItemImg5);
 
   // menuItemH35
